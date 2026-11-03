@@ -1,0 +1,22 @@
+/* OBE | Executive contact card */
+.contact .contact-placeholder{position:relative;overflow:hidden;min-height:0;padding:clamp(30px,4vw,56px);background:linear-gradient(145deg,#0b1d2a 0%,#091422 58%,#07141c 100%);border:1px solid rgba(126,206,198,.20);box-shadow:0 30px 70px rgba(7,25,32,.16);isolation:isolate}
+.contact .contact-placeholder:before{content:"";position:absolute;right:-130px;top:-150px;width:350px;height:350px;border-radius:50%;background:radial-gradient(circle,rgba(54,171,165,.16),transparent 70%);z-index:-1;pointer-events:none}
+.contact .contact-placeholder:after{content:"";position:absolute;left:0;top:0;width:100%;height:3px;background:linear-gradient(90deg,#55d3bc,#327d9c 52%,transparent)}
+.contact .contact-card-top{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.contact .contact-card-top .contact-kicker{color:#69cfc5;font:600 10px/1.5 var(--font-geist-mono),monospace;letter-spacing:.20em;text-transform:uppercase}
+.contact .contact-card-top .contact-mark{color:#75bdbb;font-size:23px;font-weight:300;line-height:1}
+.contact .contact-card-title{margin:23px 0 10px;color:#f4f9fa;font-size:clamp(27px,2.7vw,37px);font-weight:550;letter-spacing:-.045em;line-height:1.15}
+.contact .contact-card-intro{margin:0!important;max-width:420px;color:#a5bbc2!important;font-size:13px!important;line-height:1.75!important}
+.contact .contact-details{display:grid;gap:0;margin-top:30px;border-top:1px solid rgba(215,239,238,.15)}
+.contact .contact-details .contact-detail{display:grid;grid-template-columns:42px minmax(0,1fr);align-items:start;gap:15px;padding:22px 0;border:0;border-bottom:1px solid rgba(215,239,238,.15)}
+.contact .contact-detail-icon{display:grid;place-items:center;width:39px;height:39px;border:1px solid rgba(105,207,197,.28);border-radius:10px;background:rgba(105,207,197,.06);color:#74d3c6;font-size:17px;font-weight:400}
+.contact .contact-details .contact-detail-body{display:flex;flex-direction:column;gap:8px;min-width:0;padding:0;border:0}
+.contact .contact-details small{color:#83a5ad;font-size:10px;font-weight:600;letter-spacing:.16em}
+.contact .contact-details a{font-size:clamp(17px,1.65vw,23px);font-weight:520;line-height:1.35;letter-spacing:-.025em;overflow-wrap:anywhere}
+.contact .contact-details a:hover{color:#7be4d0}
+.contact .contact-details .contact-hours{color:#d3e0e3!important;font-size:13px!important;line-height:1.85!important}
+.contact .contact-card-footer{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:28px}
+.contact .contact-card-footer span{color:#9ab4b9;font-size:11px;letter-spacing:.03em}
+.contact .contact-card-footer a{display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:0 18px;border:1px solid rgba(108,224,206,.45);color:#baf4e9;background:rgba(63,155,148,.11);font-size:11px;font-weight:650;letter-spacing:.04em;text-decoration:none;transition:background .2s,color .2s}
+.contact .contact-card-footer a:hover{background:#6dd7c5;color:#0a1b24}
+@media(max-width:600px){.contact .contact-placeholder{padding:28px 24px}.contact .contact-details .contact-detail{grid-template-columns:36px minmax(0,1fr);gap:12px}.contact .contact-detail-icon{width:34px;height:34px}.contact .contact-card-footer{align-items:stretch;flex-direction:column}.contact .contact-card-footer a{width:100%}}
