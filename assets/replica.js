@@ -1,1 +1,1 @@
-import {i as react,t as dom} from './framework-DjPHiq1u.js'; import Page from './page-Cl0bWD8w.js'; dom().hydrateRoot(document.body,react().createElement(Page));
+import {i as react,t as dom} from './framework-DjPHiq1u.js'; import Page from './page-contact-20261104.js'; dom().hydrateRoot(document.body,react().createElement(Page));
